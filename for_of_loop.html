@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for-of loop</title>
+</head>
+<body>
+    <h2>for-of loop</h2>
+    <p><u>For performing for-of loop</u> :-<br>
+    A list :- ["Hello",318,true]</p>
+    <p id="id3"></p>
+        <script>
+            let element = ["Hello",318,true];
+            ans = "";
+            for(i of element){
+                ans += i + "<br>";
+            }
+            document.getElementById("id3").innerHTML = ans;
+        </script>
+</body>
+</html>

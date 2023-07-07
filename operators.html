@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Operators</title>
+</head>
+<body>
+    <center><h1>HTML Operators</h1></center>
+    <h2>1.Arithmetic Operators</h2>
+    <p>Here <mark>x = 10</mark> and <mark>y = 5</mark></p>
+    <p id="op1_1"></p>
+    <p id="op1_2"></p>
+    <p id="op1_3"></p>
+    <p id="op1_4"></p>
+    <script>
+        let x = 10;
+        let y = 5;
+        // document.write("x + y = " + (x+y));
+        // document.write(" x - y = " + (x-y));
+        document.getElementById("op1_1").innerHTML = ("x + y = " + (x+y));
+        document.getElementById("op1_2").innerHTML = ("x - y = " + (x-y));
+        document.getElementById("op1_3").innerHTML = ("x % y = " + (x%y));
+        document.getElementById("op1_4").innerHTML = ("x * y = " + (x*y));
+    </script>
+<hr>
+    <h2>2.Assignment Operators</h2>
+    <p>Here <mark>x = 30</mark> and <mark>y = 12</mark></p>
+    <p id="op2_1"></p>
+    <p id="op2_2"></p>
+    <p id="op2_3"></p>
+    <p id="op2_4"></p>
+    <script>
+        x = 30;
+        y = 12;
+        document.getElementById("op2_1").innerHTML = ("x += y = " + (x+=y));
+        document.getElementById("op2_2").innerHTML = ("x -= y = " + (x-=y));
+        document.getElementById("op2_3").innerHTML = ("x %= y = " + (x%=y));
+        document.getElementById("op2_4").innerHTML = ("x *= y = " + (x*=y));
+    </script>
+<hr>
+    <h2>3.Comparison Operators</h2>
+    <p>Here <mark>x = 5</mark> and <mark>y = 3</mark></p>
+    <p id="op3_1"></p>
+    <p id="op3_2"></p>
+    <p id="op3_3"></p>
+    <p id="op3_4"></p>
+    <script>
+        x = 5;
+        y = 3;
+        document.getElementById("op3_1").innerHTML = ("x >= y = " + (x>=y));
+        document.getElementById("op3_2").innerHTML = ("x <= y = " + (x<=y));
+        document.getElementById("op3_3").innerHTML = ("x == y = " + (x==y));
+        document.getElementById("op3_4").innerHTML = ("x != y = " + (x!=y));
+    </script>
+<hr>
+    <h2>4.logical Operators</h2>
+    <p>Here <mark>x = 5</mark> and <mark>y = 3</mark></p>
+    <p id="op4_1"></p>
+    <p id="op4_2"></p>
+    <script>
+        x = 5;
+        y = 3;
+        document.getElementById("op4_1").innerHTML = ("x  &&  y = " + (x && y));
+        document.getElementById("op4_2").innerHTML = ("x || y = " + (x || y))
+    </script>
+<hr>
+    <h2>5.String Operators</h2>
+    <p>x = "Hello " + 10<br>
+        y = 10 + 10<br>
+        z = "Hello " + "Buddy!!"</p>
+    <p id="op5_1"></p>
+    <p id="op5_2"></p>
+    <p id="op5_3"></p>
+    <script>
+        x = "Hello " + 10;
+        y = 10 + 10;
+        z = "Hello " + "Buddy!!"
+        document.getElementById("op5_1").innerHTML = (x);
+        document.getElementById("op5_2").innerHTML = (y);
+        document.getElementById("op5_3").innerHTML = (z);
+    </script>
+<hr>
+    <h2>6.Bitwise Operators</h2>
+    <p>operator:- & , | , >> , "<<" .
+        <br>operand:5 and 1</p>
+        <p id="op6_1"></p>
+        <p id="op6_2"></p>
+        <p id="op6_3"></p>
+        <p id="op6_4"></p>
+        <script>
+            document.getElementById("op6_1").innerHTML = (5 & 1);
+            document.getElementById("op6_2").innerHTML = (5 | 1);
+            document.getElementById("op6_3").innerHTML = (5 >> 1);
+            document.getElementById("op6_4").innerHTML = (5 << 1);
+        </script>
+<hr>
+    <h2>7.Ternary Operators</h2>
+        <p>age given is 12</p>
+        <p id="op7"></p>
+        
+        <script>
+            age = 19;
+            ans = (age>18) ? "good to go" : "vote when you are 18";
+            document.getElementById("op7").innerHTML=(ans);
+        </script>
+<hr>
+    <h2>7.Ternary Operators</h2>
+        <p>age given is 12</p>
+        <p id="op7"></p>
+        
+        <script>
+            age = 19;
+            ans = (age>18) ? "good to go" : "vote when you are 18";
+            document.getElementById("op7").innerHTML=(ans);
+        </script>
+</body>
+</html>

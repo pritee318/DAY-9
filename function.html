@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <center><h1>Calculator using Funtion</h1></center>
+    <p>Calculator using function:-</p>
+    <p id="id1"></p>
+    <p id="id2"></p>
+    <p id="id3"></p>
+    <p id="id4"></p>
+    <script>
+        let x = 10;
+        let y = 5;
+        // let sign = prompt("Enter operation : ");
+        
+        function sum(x,y){
+            return x+y;
+        }
+        function sub(x,y){
+            return x-y;
+        }
+        function mul(x,y){
+            return x*y;
+        }
+        function div(x,y){
+            return x/y;
+        } 
+        
+         
+        document.getElementById("id1").innerHTML = "sum of "+ x +"and "+ y +" is :- "+ sum(x,y); 
+        document.getElementById("id2").innerHTML = "- of "+ x +"and "+ y +" is :- "+ sub(x,y); 
+        document.getElementById("id3").innerHTML = "* of "+ x +"and "+ y +" is :- "+ mul(x,y); 
+        document.getElementById("id4").innerHTML = "div of "+ x +"and "+ y +" is :- "+ div(x,y); 
+    </script>
+</body>
+</html>
